@@ -105,6 +105,18 @@ p{
     color: var(--primary-text-color);
 }
 
+.header-icons:nth-child(1){
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.header-icons:nth-child(2){
+    width: 16px;
+    height: 10px;
+    margin-right: 10px;
+}
+
 .nav-list .nav-link{
     display: block;
     padding: 0px;
@@ -123,6 +135,7 @@ p{
 .contact-link:focus
 .contact-link:any-link {
     color: var(--link-text-color);
+    fill: var(--link-text-color);
 }
 
 .fair{
@@ -179,10 +192,43 @@ color: var(--link-text-color);
 }
 
 .features-item{
+    width: 270px;
     margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc(100% / 4 - 30px);
 }   
+
+.features-item::before{
+    display: block;
+    content: "";
+    height: 120px;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+}
+
+.features-item:nth-child(1)::before{
+    background-image: url("../images/antenna.svg");
+}
+
+.features-item:nth-child(2)::before{
+    background-image: url("../images/clock.svg");
+}
+
+.features-item:nth-child(3)::before{
+    background-image: url("../images/diagram.svg");
+}
+
+.features-item:nth-child(4)::before{
+    background-image: url("../images/astronaut.svg");
+}
+
+.features-icons{
+    width: 70px;
+    height: 70px;
+}
 
 .features-header{
     font-weight: 700;
@@ -318,6 +364,13 @@ footer{
 .footer-list{
     display: flex;
     justify-content: center;
+}
+
+
+
+.footer-icons{
+    width: 44px;
+    height: 44px;
 }
 
 
