@@ -16,26 +16,28 @@
 
 <body>
     <!--Шапка-->
-    <header class="header main-portfolio-content">
+    <header class="header">
         <div class="container container-header">
             <nav class="navigation">
                 <a class="nav-logo" href="./"><span class="header-logo">Web</span>Studio</a>
                 <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Студия</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./portfolio.html"><span class="fair">Портфолио</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fair">Студия</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
                     <li class="nav-item"><a class="nav-link" href="">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="contact-list">
-                <li class="contact-item"><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="contact-item"><a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="contact-item">
+                    <a class="contact-link" href="mailto:info@devstudio.com"><svg class="header-icons"><use href="./images/sprait.svg#icon-phone"></use></svg>info@devstudio.com</a></li>
+                <li class="contact-item">
+                    <a class="contact-link" href="tel:+380961111111"><svg class="header-icons"><use href="./images/sprait.svg#icon-vector"></use></svg>+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
 
     <!--Основной контент-->
     <main>
-        <section class="container">
+        <section class="container main-portfolio-content">
             <div class="menu-navigation">
                 <ul class="porfolio-navigation">
                     <li><button class="button-slice" type="button">Все</button></li>
@@ -119,8 +121,8 @@
 
     <!--Подвал-->
     <footer>
-        <div class="container">
-          <div class="footer-widget">
+        <div class="container footerbox">
+            <div class="footer-widget">
                 <a class="footer-logo" href="./"><span class="header-logo">Web</span>Studio</a>
                 <address class="footer-address">г. Киев, пр-т Леси Украинки, 26</address>
                 <ul>
@@ -128,8 +130,17 @@
                     <li class="footer-contact-item"><a class="footer-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
             </div>
-        </div>
-    </footer>
+                <div class="footer-widget">
+                    <p class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</p>
+                    <ul class="footer-list">
+                        <li class="footer-item"><a class="footer-link" href="https://www.instagram.com/"><svg class="footer-icons" width="20" height="20"><use href="./images/sprait.svg#icon-instagram"></use></svg></a></li>
+                        <li class="footer-item"><a class="footer-link" href="https://twitter.com/"><svg class="footer-icons" width="20" height="20"><use href="./images/sprait.svg#icon-twitter"></use></svg></a></li>
+                        <li class="footer-item"><a class="footer-link" href="https://www.facebook.com/"><svg class="footer-icons" width="20" height="20"><use href="./images/sprait.svg#icon-facebook"></use></svg></a> </li>
+                        <li class="footer-item"><a class="footer-link" href="https://www.linkedin.com/"><svg class="footer-icons" width="20" height="20"><use href="./images/sprait.svg#icon-linkedin"></use></svg></a> </li>
+                    </ul>
+                </div>
+            </div>
+      </footer>
 </body>
 
 </html>
