@@ -246,7 +246,6 @@ color: var(--link-text-color);
     letter-spacing: 0.03em;
 }
 
-
 /*Чем мы занимаемся*/
 
 .section-header{
@@ -306,21 +305,43 @@ color: var(--link-text-color);
 
 .clients-list{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin-left: -30px;
+    margin-top: -30px;
 }
 
 .clients-item{
     margin-left: 30px;
+    margin-top: 30px;
+    outline: 1px solid #AFB1B8;
+    height: 90px;
+    width: 170px;
 }
 
-.clients-item:hover{
-   background-color: var(--link-text-color);
+.clients-link:hover,
+.clients-link:focus{
+    outline: 1px solid var(--link-text-color);
+}
+
+.clients-icon:hover,
+.clients-icon:focus{
+   fill: var(--link-text-color);
+}
+
+.clients-icon{
+    height: 49px;
+    width: 44px;
+    fill: #AFB1B8;
 }
 
 /*Подвал*/
 footer{
     background:#2F303A;
     padding: 60px 0;
+}
+
+.footerbox{
+    display: flex;
 }
 
 .footer-logo {
@@ -346,6 +367,17 @@ footer{
 .footer-contact-item{
     margin-bottom: 9px;
 }
+
+.footer-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
 .footer-contact {
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
@@ -364,13 +396,21 @@ footer{
 .footer-list{
     display: flex;
     justify-content: center;
+    background-size: cover;
 }
 
-
+.footer-item{
+    height: 44px;
+    width: 162px;
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 4 - 10px);
+}
 
 .footer-icons{
-    width: 44px;
-    height: 44px;
+    fill: #FFFFFF;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 
