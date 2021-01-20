@@ -3,6 +3,8 @@
     --title-text-color: #212121;
     --link-text-color: #2196F3;
     --second-text-color:#FFFFFF;
+    --second-backgraund-color:#F5F4FA;
+    --fill-color-icons: #AFB1B8;
 }
 
 body {
@@ -126,14 +128,12 @@ p{
 }
 
 .nav-link:hover,
-.nav-link:focus
-.nav-link:any-link {
+.nav-link:focus{
     color: var(--link-text-color);
 }
 
 .contact-link:hover,
-.contact-link:focus
-.contact-link:any-link {
+.contact-link:focus{
     color: var(--link-text-color);
     fill: var(--link-text-color);
 }
@@ -150,7 +150,7 @@ color: var(--link-text-color);
 }
 
 .main-header{
-    background-color:  #2F303A;
+    background-color: #2F303A;
     text-align: center;
     height: 600px;
     display: flex;
@@ -205,7 +205,7 @@ color: var(--link-text-color);
     background-size: 70px 70px;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #F5F4FA;
+    background-color: var(--second-backgraund-color);
     margin-bottom: 30px;
 }
 
@@ -265,6 +265,10 @@ color: var(--link-text-color);
 
 /*Команда*/
 
+.section-team{
+    background-color: var(--second-backgraund-color);
+}
+
 .team-list{
     display: flex;
     flex-wrap: wrap;
@@ -317,17 +321,22 @@ color: var(--link-text-color);
     justify-content: center;
     height: 44px;
     width: 44px;
-    background-color: #FFFFFF;
+    background-color: var(--second-text-color);
     border-radius: 50%;
 }
 
 .networks-icons{
-    fill: #AFB1B8;
+    fill: var(--fill-color-icons);
 }
 
 .networks-link:hover,
 .networks-link:focus{
     background-color: var(--link-text-color);
+}
+
+.networks-link:hover .networks-icons,
+.networks-link:focus .networks-icons{
+    fill: var(--second-text-color);
 }
 
 /*Постоянные клиенты*/
@@ -352,7 +361,7 @@ color: var(--link-text-color);
     justify-content: center;
     height: 90px;
     border-radius: 4px;
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--fill-color-icons);
 }
 
 .clients-link:hover .clients-icon,
@@ -366,7 +375,7 @@ color: var(--link-text-color);
 }
 
 .clients-icon{
-    fill: #AFB1B8;
+    fill: var(--fill-color-icons);
     height: 90px;
 }
 
@@ -412,7 +421,7 @@ footer{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 20px;
-    color: #FFFFFF;
+    color: var(--second-text-color);
 }
 
 .footer-contact {
@@ -454,7 +463,7 @@ footer{
 }
 
 .footer-icons{
-    fill: #FFFFFF;
+    fill: var(--second-text-color);
 }
 
 .footer-link:hover,
@@ -487,13 +496,14 @@ footer{
 
 .main-port-item{
     box-sizing: border-box;
-    flex-basis: calc(100% / 3 - 30px);
+    width: 370px;
+    flex-basis: calc(100%/3 - 30px);
     border: 1px solid #EEEEEE;
     margin-top: 30px;
     margin-left: 30px;
 }
 
-.main-port-item:hover
+.main-port-item:hover,
 .main-port-item:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -547,13 +557,17 @@ button:focus{
     text-align: center;
     letter-spacing: 0.03em;
 
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     
-    background: #F5F4FA;
+    background: var(--second-backgraund-color);
     color: var(--title-text-color);
     border: 0;
     padding: 6px 22px;
     border-radius: 4px;
     margin-left: 8px;
+}
+
+.button-slice:hover,
+.button-slice:focus{
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
